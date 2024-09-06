@@ -1,0 +1,23 @@
+## Find if the number is a Prime number
+
+print("Try programiz.pro")
+x=int(input("Enter a number")) 
+if x>1:
+    for i in range (2,x-1):
+        if x%i==0:
+            print (x,"is not a prime number")
+            break
+    else:
+        print (x,"is a prime number")
+
+## Print all the prime numbers within a range of numbers
+Start = int(input("Enter a starting range"))
+End = int(input("Enter a ending range"))
+for i in range(Start,End+1):
+    if i>1:
+        
+        for j in range(2,i):
+            if i%j==0:
+                break
+        else:
+            print(i)
