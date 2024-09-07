@@ -1,0 +1,23 @@
+##Simple Calculator
+
+Num1=int(input("Enter a number:"))
+Num2=int(input("Enter another number:"))
+print("1.Addition\n2.Subtraction\n3.Multiplication\n4.Divsion")
+Check=int(input("Select the Operation:"))
+if (Check==1):
+    result=Num1+Num2
+    print(result)
+elif (Check==2):
+    result=Num1-Num2
+    print(result)
+elif (Check==3):
+    result=Num1*Num2
+    print(result)
+elif (Check==4):
+    if (Num2==0):
+        print("Divison by 0 is not Possible")
+    else:
+        result=Num1/Num2
+        print(result)
+else:
+    print("Invalid")
